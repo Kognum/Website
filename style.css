@@ -1,0 +1,56 @@
+body {
+	background-color: black;
+	
+	margin: 0px;
+	
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+p, h2, li {
+	font-family: "JetBrains Mono", serif;
+	color: OldLace;
+}
+
+a, a:link, a:visited {
+	color: Silver;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: NavajoWhite;
+	text-decoration: underline;
+}
+
+table {
+	border: 0px;
+	
+	width: 100%;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.site-header {
+	background-color: Black;
+	
+	z-index: 999;
+	position: fixed;
+	
+	padding-left: 0px;
+}
+
+.site-body {
+	background-image: url("bg.png");
+	background-size: 256px;
+	background-repeat: repeat;
+	background-position: center;
+	
+	flex: 1;
+	display: table;
+	
+	padding-top: 64px;
+}
+
+.site-footer{
+	background-color: Black;
+}
