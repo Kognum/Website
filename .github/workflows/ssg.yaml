@@ -46,7 +46,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with python
-        run: python3 builder.python
+        run: python3 builder.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
