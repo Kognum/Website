@@ -68,6 +68,7 @@ table {
 
 .proj-logo{
 	padding-left: 12px;
+	padding-top: 12px;
 
 	max-height: 84px;
 	width: auto;
@@ -91,5 +92,7 @@ table {
 		height: auto;
 		max-width: 256px;
 		max-height: fit-content;
+
+		padding-top: 0px;
 	}
 }
