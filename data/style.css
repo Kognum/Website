@@ -1,7 +1,5 @@
 body {
 	background-color: black;
-	background-image: url("bg.png");
-	background-size: 256px;
 	background-repeat: repeat;
 	background-attachment: fixed;
 	
@@ -24,11 +22,11 @@ p, h2, h3, li {
 }
 
 a, a:link, a:visited {
-	color: Silver;
+	color: NavajoWhite;
 	text-decoration: none;
 }
 a:hover, a:active {
-	color: NavajoWhite;
+	color: darkgray;
 	text-decoration: underline;
 }
 
@@ -48,7 +46,7 @@ table {
 	display: table;
 }
 
-.teaser{
+.teaser {
 	padding-top: 32px;
 	padding-bottom: 32px;
 	text-align: center;
@@ -58,43 +56,67 @@ table {
 	image-rendering: pixelated;
 }
 
-.proj{
+.proj {
 	display: flex;
-	flex-direction: column;
 
 	background-attachment: fixed;
+	background-repeat: repeat;
 	image-rendering: pixelated;
 }
 
-.proj-logo{
-	padding-left: 12px;
-	padding-top: 24px;
-	padding-bottom: 12px;
-
-	max-height: 84px;
-	width: auto;
-
+.proj-logo {
 	object-fit: contain;
 }
 
 @media screen and (min-width: 900px) {
+	body {
+		background-image: url("bg.png");
+	}
+
 	.site-header, .headerless {
 		margin-top: 12px;
 	}
-	.site-footer{
+	.site-footer {
 		margin-bottom: 12px;
 	}
 
-	.proj{
+	.proj {
 		flex-direction: row;
 	}
 
-	.proj-logo{
+	.proj-logo {
 		height: auto;
 		max-width: 256px;
 		max-height: fit-content;
 
+		padding-left: 12px;
+
 		padding-top: 0px;
 		padding-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		background-image: none;
+	}
+
+	.site-header, .headerless {
+		margin-top: 0px;
+	}
+	.site-footer {
+		margin-bottom: 0px;
+	}
+
+	.proj {
+		flex-direction: column;
+	}
+
+	.proj-logo {
+		max-height: 84px;
+		width: auto;
+		
+		padding-top: 24px;
+		padding-bottom: 12px;
 	}
 }
