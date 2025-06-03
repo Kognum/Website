@@ -12,8 +12,8 @@ project/
 ├── pages/          # HTML pages with TEMPLATE tags
 ├── templates/      # HTML templates with CONTENT placeholders
 ├── builder.py      # Build script
-├── server.py        # Development server
-└── build/          # Generated output (created by builder)
+├── server.py       # Development server (doesn't support hot reloading)
+└── build/          # Generated output (created by builder.py)
 ```
 
 ## Scripts
