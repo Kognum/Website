@@ -6,9 +6,9 @@
 		<meta property="og:type" content="website">
 		<meta name="twitter:card" content="summary_large_image">
 		
-		<title>KOGNUM :: <!-- TITLE --></title>
-    		<meta property="og:title" content="KOGNUM :: <!-- TITLE -->">
-    		<meta name="twitter:title" content="KOGNUM :: <!-- TITLE -->">
+		<title>KOGNUM :: Home</title>
+		<meta property="og:title" content="KOGNUM :: Home">
+		<meta name="twitter:title" content="KOGNUM :: Home">
     		
 		<meta name="description" content="Brazilian worker coop. Making outstanding art & software in the 21st century." />
 		<meta property="og:description" content="Brazilian worker coop. Making outstanding art & software in the 21st century.">
@@ -17,7 +17,7 @@
 		<link rel="icon" href="https://kognum.com/favicon.png" sizes="any">
 		<meta property="og:image" content="https://kognum.com/favicon.png" />
 		<meta name="twitter:image" content="https://kognum.com/favicon.png"> 
-	
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Brazilian worker coop. Making outstanding art & software in the 21st century." />
 		<meta name="robots" content="index" />
@@ -29,27 +29,42 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 		
-		<link rel="stylesheet" href="/style.css">
+		<style>
+		    body {
+		      font-family: "JetBrains Mono", serif;
+			 font-size: 10pt;
+		      margin: 0;
+		      padding: 0;
+		      background: #000 url("bg.png") no-repeat right bottom fixed;
+		      height: 100vh;
+		      display: flex;
+		      justify-content: center;
+		      align-items: center;
+		    }
+		
+		    .container {
+		      display: flex;
+		      align-items: center;
+		      gap: 2rem;
+		    }
+		
+		    img {
+		      max-width: 120px;
+		      width: 40%;
+		      height: auto;
+		    }
+		    
+		    p {
+		    	 color: white;
+		    }
+	</style>
 	</head>
 	<body>
-		<div class="site-body headerless">
-			<!-- CONTENT -->
+		<div class="container">
+		    <img src="logo.png">
+		    <div>
+		      <p>soon.</p>
+		    </div>
 		</div>
-		<table class="site-footer">
-			<tr>
-				<td align="left">
-					<p>&copy; 2025 KOGNUM. All rights reserved.</p>
-				</td>
-				<td align="right">
-					<p><a href="https://playtest.kognum.com">Playtest Storage</a></p>
-				</td>
-				<td align="right">
-					<p><a href="/privacy-policy/">Privacy Policy</a></p>
-				</td>
-				<td align="right">
-					<img src="/button.png" style="image-rendering: pixelated; margin-right: 12px;">
-				</td>
-			</tr>
-		</table>
-  	</body>
+	</body>
 </html>
